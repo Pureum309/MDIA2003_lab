@@ -3,8 +3,8 @@
 /** HEADER **/
 
 #first_half {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     /* margin-top:0px;
     margin-bottom:0px; */
     justify-content: center;
@@ -304,51 +304,36 @@ h2 > span.blue_metrolics {
 
  .section_blog {
     display: flex;
-	flex-flow: column;
+	flex-flow: row wrap;
 	justify-content: center;
-    margin: auto;
 	/* margin: 5px 0; */
-    /* display:grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 	/* Add a 10px gap between columns  
 	grid-column-gap: 10px; */
  }
 
- .section_blog > .third_header, .entry_description {
-    justify-content: center;
-    margin: auto;
- }
 
-.column2 {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
- 
-    /* 
-    .entry_description {
-    margin-left: 10em;
-    margin-right: 10em;
- }display: grid;
+.latest_work_section {
+    display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 24px;
     font-size: 16px;
     padding-left: 10em;
-    padding-right: 10em; */
+    padding-right: 10em;
     
-
+}
 
 .entry_description {
     display: flex;
-    display: flex;
-    flex-direction: row;     /* make main axis horizontal (default setting) */
-    justify-content: center; /* center items horizontally, in this case */
-    align-items: center; 
-    /* padding-left: 15em;
-    padding-right: 10em; */
-    /* align-items: center;
-    justify-content: center; */
+    left: 0;
+    gap: 30px;
+    padding-left: 10em;
+    padding-right: 10em;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     /* line-height: 24px; */
     /* max-width: 960px;

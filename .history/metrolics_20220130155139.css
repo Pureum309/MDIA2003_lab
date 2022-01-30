@@ -306,7 +306,7 @@ h2 > span.blue_metrolics {
     display: flex;
 	flex-flow: column;
 	justify-content: center;
-    margin: auto;
+    margin: 10px;
 	/* margin: 5px 0; */
     /* display:grid;
     grid-template-columns: 1fr 1fr 1fr; */
@@ -319,10 +319,7 @@ h2 > span.blue_metrolics {
     margin: auto;
  }
 
-.column2 {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 
  
     /* 

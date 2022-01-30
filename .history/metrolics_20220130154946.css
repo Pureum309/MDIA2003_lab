@@ -319,17 +319,16 @@ h2 > span.blue_metrolics {
     margin: auto;
  }
 
-.column2 {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
- 
-    /* 
-    .entry_description {
-    margin-left: 10em;
-    margin-right: 10em;
- }display: grid;
+
+.colum1 +
+.column2+ 
+.column3 {
+    display: flex;
+    margin-left: 20px;
+  margin-right: 20px;
+    
+    /* display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 24px;
@@ -337,7 +336,7 @@ h2 > span.blue_metrolics {
     padding-left: 10em;
     padding-right: 10em; */
     
-
+}
 
 .entry_description {
     display: flex;

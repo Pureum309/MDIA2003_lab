@@ -319,17 +319,13 @@ h2 > span.blue_metrolics {
     margin: auto;
  }
 
-.column2 {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
- 
-    /* 
-    .entry_description {
+
+ .entry_description {
     margin-left: 10em;
     margin-right: 10em;
- }display: grid;
+ }
+    /* display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 24px;
