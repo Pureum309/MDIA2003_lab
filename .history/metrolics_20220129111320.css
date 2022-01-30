@@ -1,0 +1,102 @@
+/** kaycee's css**/
+
+/** HEADER **/
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center; 
+   padding: 0;
+   margin: 0;
+   top: 0;
+}
+
+
+
+
+.logo_image { /*Scale down the Metrolics logo, and move it down */
+    display: inline-block;
+    margin-top: 4.5em;
+    max-width: 50%;
+    height: auto;
+    
+}
+
+.header_elements { /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 0;
+}
+
+.header_elements { /* Align 5 elements: Home, Page, Blog, Porfolio, Home to row */
+    top: 0;
+    list-style-type: none; /* Remove bullets */
+    position: relative;
+   
+}
+
+.header_elements > a {
+    text-align: center;
+
+}
+
+.header_elements > p {
+    text-align: left;
+}
+
+.header_elements > li > a { /* Change text colour, remove link's underline */
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Remove underline of links*/
+    
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+
+
+.homebutton1_icon { /* Horizontally align Home button, and move it down a bit */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 20%);
+}
+
+.header_pagesbutton_icon {
+    padding: auto;
+}
+
+.header_homebutton1 {
+    width: 6em;
+    height: 5em;
+    background-color: #25c389;
+    position: relative;
+}
+
+.header_pagesbutton {
+    width: 6em;
+    height: 5em;
+    background-color: #ffb901;
+    position: relative;
+}
+
+.top_fullwidth_background {
+    background-color: #cfcfcf;
+    
+}
+
+.top_fullwidth_picture {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

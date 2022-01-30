@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .section4 {
     text-align: center;
    }
@@ -84,3 +85,36 @@
         background: white;
         padding: 20px 10px;
     }
+=======
+/** kaycee's css**/
+
+.header > .logo .header_elements {
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    font-display: block;
+    justify-content: center;
+}
+.logo_image {
+    /* display: inline-block; */
+    left: 0;
+    top: 0;
+    max-width: 40%;
+    height: auto;
+}
+
+.header_elements {
+    display: inline-flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    flex-direction: row;
+   
+  
+}
+
+.header_elements a {
+    text-decoration: none; /*Remove underline of links*/
+    
+}
+>>>>>>> ca4c676bd27abaeb54fa2fda7304f21e28cf8bdb

@@ -1,0 +1,23 @@
+/** kaycee's css**/
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    font-display: block;
+    
+}
+.logo_image {
+    /* display: inline-block; */
+    left: 0;
+    top: 0;
+    max-width: 40%;
+    height: auto;
+}
+
+.header_elements {
+    display: inline-flex;
+    list-style-type: none;
+    flex-direction: row;
+    text-decoration: none;
+}

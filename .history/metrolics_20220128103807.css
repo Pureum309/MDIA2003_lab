@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .imgsection {
     padding: 0;
     margin-bottom: 30px;
@@ -22,3 +23,19 @@
     margin: 0 0 20px;
     position: relative;
   } */ */
+=======
+/** kaycee's css**/
+
+.header {
+    margin: auto;
+    font-display: block;
+    align-items: center;
+}
+.logo_image {
+    left: 0;
+    top: 0;
+    max-width: 10%;
+    height: auto;
+}
+
+>>>>>>> ca4c676bd27abaeb54fa2fda7304f21e28cf8bdb
