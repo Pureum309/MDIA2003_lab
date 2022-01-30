@@ -1,0 +1,79 @@
+/** kaycee's css**/
+
+/** HEADER **/
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center; 
+  
+}
+
+.logo_image, .header_elements {
+    padding: 0;
+}
+
+
+.logo_image {
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+   
+}
+
+.header_elements {
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+  
+}
+
+.header_elements {
+    top: 0;
+    list-style-type: none; /* Remove bullets */
+    position: relative;
+    text-align: center;
+  
+    
+}
+
+li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Remove underline of links*/
+    
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+.homebutton1_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_homebutton1 {
+    width: 6em;
+    height: 5em;
+    background-color: #25c389;
+    position: relative;
+}
+
+
+
+.top_fullwidth_background {
+    background-color: gray;
+    
+}
+
+.top_fullwidth_picture {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

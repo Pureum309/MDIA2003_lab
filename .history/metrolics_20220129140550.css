@@ -1,0 +1,156 @@
+/** kaycee's css**/
+
+/** HEADER **/
+
+h1, h2, p, div {
+    padding: 0;
+    margin: 0;
+    margin-top:0px;
+    margin-bottom:0px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center; 
+   padding: 0;
+   margin: 0;
+   top: 0;
+}
+
+.header_elements {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home button, and move it down a bit */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+   
+}
+
+
+.logo_image { /*Scale down the Metrolics logo, and move it down */
+    float: left;
+    left: 0;
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    
+}
+
+.header_elements { /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none; /* Remove bullets */
+    position: relative;
+    text-align: center;
+    transform: translate(-25%, -25%);
+}
+
+
+
+
+.header_elements > li > a { /* Change text colour, remove link's underline */
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Remove underline of links*/
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, 10%);
+   
+    
+}
+
+
+
+
+
+
+
+
+.header_elements > li {
+    width: 6em;
+    height: 6em;
+    position:relative;
+}
+
+.header_homebutton1 {
+    background-color: #25c389;
+    
+}
+
+
+.header_pagesbutton {
+    background-color: #ffb901;
+}
+
+.header_blogbutton {
+    background-color: #de6262;
+}
+
+.header_porfoliobutton {
+    background-color: #1691bd;
+}
+
+.header_homebutton2 {
+    background-color: #166ba2;
+}
+
+.top_fullwidth_background, .top_fullwidth_picture {
+    position: relative;
+}
+
+
+.top_fullwidth_section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: url("fullwidth_pic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 300px;
+    display: block;
+    
+}
+
+
+.top_fullwidth_background {
+    display: flex;
+    left: 0;
+    background-color: #cfcfcf;
+    width: 100%;
+    height: 300px;
+    float:left;
+    clear:none; 
+    
+}
+
+
+
+
+.top_fullwidth_picture {
+    background-size: cover;
+    background-position: center;
+    max-width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+}
+
+.slider_contents {
+    position: absolute;
+}

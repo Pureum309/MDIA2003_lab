@@ -1,0 +1,55 @@
+/** kaycee's css**/
+
+/** HEADER **/
+
+header {
+   display: flex;
+   flex-direction: row;
+   top: 0;
+   justify-content: center;
+   align-content: center; 
+}
+
+
+.logo_image {
+    /* display: inline-block; */
+    /* left: 0;
+    top: 0; */
+    max-width: 30%;
+    height: auto;
+   
+}
+
+.header_elements {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+  
+}
+
+.header_elements a {
+    text-decoration: none; /*Remove underline of links*/
+    list-style-type: none; /* Remove bullets */
+    padding: 0.5em;
+    position: relative;
+    text-align: center;
+    align-self: flex-end;
+   
+    /* padding: 1em; */
+}
+
+header ul.header_elements {
+    width: 120px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: #25c389;
+    position: relative;
+}
+
+.header_homebutton1_icon .header_homebutton1_background {
+    
+}
