@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+.imgsection {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.imgsection .imgs1 {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+/* .imgs1 {
+    display: block;
+}
+
+.imgs1 .img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 180px;
+    margin: 0 0 20px;
+    position: relative;
+  } */ */
+=======
 /** kaycee's css**/
 
 .header {
@@ -12,3 +38,4 @@
     height: auto;
 }
 
+>>>>>>> ca4c676bd27abaeb54fa2fda7304f21e28cf8bdb

@@ -1,0 +1,19 @@
+.imgsection {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 0px;
+  }
+
+  .imgs1 {
+    margin: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  /* .imgs1 img {
+    width: 250 px;
+  } */

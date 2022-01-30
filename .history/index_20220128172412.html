@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDIA2003_lab</title>
+
+    <link rel="stylesheet" href="metrolics.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- This is the logo in the header -->
+    <header class="header">
+        <div class="logo">
+            <img class="logo_image" src="metrolics_logo.png">
+        </div>
+    </header>
+
+    <!-- This is 5 elements: Home, Page, Blog, Portfolio, and Home in the header -->
+    <ul class="header_elements">
+        <li class="header_homebutton1">
+            <a href="" class="header_homebutton1_icon">
+                <img src="homebutton1_logo.png" alt="This is a home icon">
+                <p>Home</p>
+            </a>
+        </li>
+        <li class="header_pagesbutton">
+            <a href="" class="header_pagesbutton_icon">
+                <img src="pagebutton_logo.png" alt="This is a page icon">
+                <p>Pages</p>
+            </a>
+        </li>
+        <li href="" class="header_blogbutton">
+            <a href="" class="header_blogbutton_icon">
+                <img src="blogbutton_logo.png" alt="This is a blog icon">
+                <p>Blog</p>
+            </a>
+        </li>
+        <li href="" class="header_porfoliobutton">
+            <a href="" class="header_porfoliobutton_icon">
+                <img src="portfoliobutton_logo.png" alt="This is a portfolio icon">
+                <p>Portfolio</p>
+            </a>
+        </li>
+        <li href="" class="header_homebutton2">
+            <a href="" class="header_homebutton2_icon">
+                <img src="homebutton2_logo.png" alt="This is a home icon">
+                <p>Home</p>
+            </a>
+        </li>
+    </ul>
+
+    <!-- This is the big picture below the header that could be swipe to both direction -->
+    <main>
+        <section class="top_fullwidth_section">
+            <img class="top_fullwidth_picture" src="fullwidth_pic.png">
+
+            <!-- These are two left and right arrows, and 3 contents inside the picture in between-->
+            <div id="arrow_left" class="arrows">
+                <img class="arrow_left_picture" src="slide_left.png">
+                <!-- The arrow is white so it won't show up on it own, only appear when we put in css and make it overlaps on the fullwidth picture -->
+            </div>
+
+            <!-- This is the 3 contents on top of the big picture-->
+            <div class="slider_contents">
+                <div class="slider_content_1">
+                    <div class="slider_content_borderleft1"></div>
+                    <span>Metro Style</span>
+                </div>
+                <div class="slider_content_2">
+                    <div class="slider_content_borderleft1"></div>
+                    <span>Retina Ready</span>
+                </div>
+                <div class="slider_content_3">
+                    <div class="slider_content_borderleft1"></div>
+                    <span>Responsive Design</span>
+                </div>
+            </div>
+
+            <div id="arrow_right" class="arrows">
+                <img class="arrow_left_picture" src="slide_right.png">
+                <!-- The arrow is white so it won't show up on it own, only appear when we put in css and make it overlaps on the fullwidth picture -->
+            </div>
+        </section>
+
+        <!-- These are the headers that are in the center of the page -->
+        <section class="headers_and_section_featured_items">
+            <!-- This is the first big header -->
+            <div id="first_header" class="center_headers">
+                <h2>Hey guys! This is the <span class="blue_metrolics">Metrolics</span> theme. <br>
+                    It sports a responsive layout with a mobile layout.</h2>
+                <!-- I wonderred should I use <p> or <h2>, <h3>?
+                    Okay, i think i should use <h2> <h3> then -->
+            </div>
+
+            <!-- This is the second smaller header-->
+            <div id="second_header" class="center_headers">
+                <h3>Things That We Do</h3>
+                <p>Ask us what we can do for you</p>
+            </div>
+
+
+            <!-- This is the 4 featured items: Web Soloution, Photography, Web Development, Web Design -->
+            <section class="page_section_featured_items">
+                <div class="featured_item_1">
+                    <img class="featured_item_1_image" src="featured_item1_icon.png" alt="img picture" />
+
+                    <!-- This is the header of the first fetured items-->
+                    <div class="featured_item_1_title">
+                        Web Solutions
+                    </div>
+
+                    <!-- This is the content of the first fetured items-->
+                    <p class="featured_item_1_content">
+                        We are a fairly small, flexible design studio <br> that designs for print and web.
+                        We work <br> flexibly with clients to fulfil their design <br> needs. Whether you need
+                        to create a brand <br> from scratch, including marketing materials <br> and a beautiful
+                        and functional website or whether you are looking for a design refresh we are
+                        confident you will be pleased with the results.
+                        <!-- In the website mockup, 
+                            this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
+                    </p>
+                </div>
+
+                <div class="featured_item_2">
+                    <img class="featured_item_2_image" src="featured_item2_icon.png" alt="img picture" />
+
+                    <!-- This is the header of the second fetured items-->
+                    <div class="featured_item_2_title">
+                        Photography
+                    </div>
+
+                    <!-- This is the content of the second fetured items-->
+                    <p class="featured_item_2_content">
+                        We are a fairly small, flexible design studio <br> that designs for print and web.
+                        We work <br> flexibly with clients to fulfil their design <br> needs. Whether you need
+                        to create a brand <br> from scratch, including marketing materials <br> and a beautiful
+                        and functional website or whether you are looking for a design refresh we are
+                        confident you will be pleased with the results.
+                        <!-- In the website mockup, 
+                            this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
+                    </p>
+                </div>
+
+                <div class="featured_item_3">
+                    <img class="featured_item_3_image" src="featured_item3_icon.png" alt="img picture" />
+
+                    <!-- This is the header of the third fetured items-->
+                    <div class="featured_item_3_title">
+                        Web Developer
+                    </div>
+
+                    <!-- This is the content of the third fetured items-->
+                    <p class="featured_item_3_content">
+                        We are a fairly small, flexible design studio <br> that designs for print and web.
+                        We work <br> flexibly with clients to fulfil their design <br> needs. Whether you need
+                        to create a brand <br> from scratch, including marketing materials <br> and a beautiful
+                        and functional website or whether you are looking for a design refresh we are
+                        confident you will be pleased with the results.
+                        <!-- In the website mockup, 
+                            this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
+                    </p>
+                </div>
+
+                <div class="featured_item_4">
+                    <img class="featured_item_4_image" src="featured_item4_icon.png" alt="img picture" />
+
+                    <!-- This is the header of the fourth fetured items-->
+                    <div class="featured_item_4_title">
+                        Web Design
+                    </div>
+
+
+                    <!-- This is the content of the fourth fetured items-->
+                    <p class="featured_item_4_content">
+                        We are a fairly small, flexible design studio <br> that designs for print and web.
+                        We work <br> flexibly with clients to fulfil their design <br> needs. Whether you need
+                        to create a brand <br> from scratch, including marketing materials <br> and a beautiful
+                        and functional website or whether you are looking for a design refresh we are
+                        confident you will be pleased with the results.
+                        <!-- In the website mockup, 
+                            this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
+                    </p>
+                </div>
+
+                <!-- This is the third smallest header-->
+                <div id="third_header" class="center_headers">
+                    <h3>What's Up Lately?</h3>
+                    <p>Read upon our latest work</p>
+                </div>
+            </section>
+
+            <!-- This is the three pictures about latest work that below What's Up Lately -->
+            <section class="latest_work_section">
+                <div class="latest_work_1">
+                    <div class="date_and_time">
+                        <p>29</p>
+                        <p>Nov.2013</p>
+                    </div>
+
+                    <div class="sample_img_blue_bars">
+                        <p id="blue_bar_header" class="blue_bar_contents">Sample Image Post</p>
+                        <p id="blue_bar_text" class="blue_bar_contents">Photography</p>
+                        <img class="blue_bar_icon" src="blue_bar_camera_icon.png" alt="camera icon">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a class="latest_work_thumbnail" href="This is a thumbnail"></a>
+                        <span class="image">
+                            <img src="latest_work_thumbnail.png" alt="this is a thumbnail">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="latest_work_2">
+                    <div class="date_and_time">
+                        <p>29</p>
+                        <p>Nov.2013</p>
+                    </div>
+
+                    <div class="sample_img_blue_bars">
+                        <p id="blue_bar_header" class="blue_bar_contents">Sample Image Post</p>
+                        <p id="blue_bar_text" class="blue_bar_contents">Photography</p>
+                        <img class="blue_bar_icon" src="blue_bar_camera_icon.png" alt="camera icon">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a class="latest_work_thumbnail" href="This is a thumbnail"></a>
+                        <span class="image">
+                            <img src="latest_work_thumbnail.png" alt="this is a thumbnail">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="latest_work_3">
+                    <div class="date_and_time">
+                        <p>29</p>
+                        <p>Nov.2013</p>
+                    </div>
+
+                    <div class="sample_img_blue_bars">
+                        <p id="blue_bar_header" class="blue_bar_contents">Sample Image Post</p>
+                        <p id="blue_bar_text" class="blue_bar_contents">Photography</p>
+                        <img class="blue_bar_icon" src="blue_bar_camera_icon.png" alt="camera icon">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a class="latest_work_thumbnail" href="This is a thumbnail"></a>
+                        <span class="image">
+                            <img src="latest_work_thumbnail.png" alt="this is a thumbnail">
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" href="sidebar-right.html">
+                    <span class="img">
+                        <img src="assets/images/s1.jpg" alt="">
+                    </span>
+                </a>
+            </div> -->
+            </section>
+
+
+            <!-- Sarah -->
+            <div class="section4">
+                <h2 class="imgs"><span>Our Latest Projects</span></h2>
+                <p>Client happy? We are happy.</p>
+                <!-- image link come up here -->
+                <section class="imgsection">
+                    <div class="imgs1">
+                        <img src="/imgs/section_1.jpg" alt="section_1/">
+                    </div>
+
+                    <div class="imgs1">
+                        <img src="/imgs/section_1.jpg" alt="section_1/">
+                    </div>
+
+                    <div class="imgs1">
+                        <img src="/imgs/section_1.jpg" alt="section_1/">
+                    </div>
+
+                    <div class="imgs1">
+                        <img src="/imgs/section_1.jpg" alt="section_1/">
+                    </div>
+
+                    <div class="imgs1">
+                        <img src="/imgs/section_1.jpg" alt="section_1/">
+                    </div>
+
+                    <div class="imgs1">
+                        <img src="/imgs/section_1.jpg" alt="section_1/">
+                    </div>
+                </section>
+            </div>
+
+            <!-- section 4 end -->
+
+            <div class="section5_heading">
+                <h2 class="thingsof"><span>Thingsofabove</span></h2>
+                <p>Misc stuff we could not put any place else</p>
+            </div>
+
+            <div class="section5">
+                <!-- Sample Accordion Menu https://dev.to/anitamaity/simple-accordion-menu-using-html-and-css-only-4i3c -->
+                <!-- 1st menu  -->
+                <div class="accordionMenu">
+                    <input type="radio" name="trg1" id="acc1" checked="checked">
+                    <label for="acc1">Sample Accordian Menu</label>
+                    <div class="content">
+                        <div class="inner">
+                            <figure>
+                                <img src="/imgs/accordion.jpg" alt="accordion" width="50" height="50">
+                            </figure>
+                            <figure>
+                                <h4>Web Solution</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis magni laborum
+                                    iusto consequuntur et vitae quae deserunt eaque illo, asperiores adipisci vero accusantium
+                                    ipsum atque
+                                    excepturi vel ad illum?</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- 2nd menu -->
+                    <input type="radio" name="trg1" id="acc2">
+                    <label for="acc2">Sample Accordian Menu 2</label>
+                    <div class="content">
+                        <div class="inner">
+                            <figure>
+                                <img src="/imgs/accordion.jpg" alt="accordion" width="50" height="50">
+                            </figure>
+                            <figure>
+                                <h4>Web Solution</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis magni laborum
+                                    iusto consequuntur et vitae quae deserunt eaque illo, asperiores adipisci vero accusantium
+                                    ipsum atque
+                                    excepturi vel ad illum?</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- 3rd menu -->
+                    <input type="radio" name="trg1" id="acc3">
+                    <label for="acc3">Sample Accordian Menu 3</label>
+                    <div class="content">
+                        <div class="inner">
+                            <figure>
+                                <img src="/imgs/accordion.jpg" alt="accordion" width="50" height="50">
+                            </figure>
+                            <figure>
+                                <h4>Web Solution</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis magni laborum
+                                    iusto consequuntur et vitae quae deserunt eaque illo, asperiores adipisci vero accusantium
+                                    ipsum atque
+                                    excepturi vel ad illum?</p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabbed Menu https://codepen.io/MPDoctor/pen/mpJdYe -->
+                <div class="tab_menu">
+                    <div class="tabbed">
+                        <input type="radio" id="tab1" name="css-tabs" checked>
+                        <input type="radio" id="tab2" name="css-tabs">
+                        <input type="radio" id="tab3" name="css-tabs">
+
+                        <ul class="tabs">
+                            <li class="tab"><label for="tab1">Tab 1</label></li>
+                            <li class="tab"><label for="tab2">Tab 2</label></li>
+                            <li class="tab"><label for="tab3">Tab 3</label></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <img src="/imgs/tab_1.jpg" alt="tab_1" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_2.jpg" alt="tab_2" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_3.jpg" alt="tab_3" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_4.jpg" alt="tab_4" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                        </div>
+
+                        <div class="tab-content">
+                            <img src="/imgs/tab_1.jpg" alt="tab_1" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_2.jpg" alt="tab_2" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_3.jpg" alt="tab_3" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_4.jpg" alt="tab_4" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                        </div>
+
+                        <div class="tab-content">
+                            <img src="/imgs/tab_1.jpg" alt="tab_1" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_2.jpg" alt="tab_2" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_3.jpg" alt="tab_3" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                            <img src="/imgs/tab_4.jpg" alt="tab_4" width="30" height="30">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ipsam perferendis, fugit
+                                animi
+                                asperiores velit nemo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section5 end -->
+
+            <!-- Client logo -->
+            <div class="clients">
+                <div class="clientlogo">
+                    <img src="/imgs/client_1.jpg" alt="client_1" width="100" height="50">
+                </div>
+                <div class="clientlogo">
+                    <img src="/imgs/client_2.jpg" alt="client_2" width="100" height="50">
+                </div>
+                <div class="clientlogo">
+                    <img src="/imgs/client_3.jpg" alt="client_3" width="100" height="50">
+                </div>
+                <div class="clientlogo">
+                    <img src="/imgs/client_4.jpg" alt="client_4" width="100" height="50">
+                </div>
+                <div class="clientlogo">
+                    <img src="/imgs/client_5.jpg" alt="client_5" width="100" height="50">
+                </div>
+            </div>
+    </main>
+
+    <!-- <footer id="footer">
+        <div class="owner">
+            <img src="/imgs/portrait.jpg" alt="portrait" width="50" height="60">
+            <h4 class="ownername">Peewee Herman</h4>
+            <p class="ownerbody">Peewee has over 10 years experience in the industry. He is Our crative Director,
+                digital designer, web designer and front-end developer. He is also pretty good with a sketch-book.
+                before starting the compnay Peewee worked as a designer and studio manager for a design house who
+                boasted a number of big name clients.</p>
+        </div>
+        <!-- widget starts 
+        <div class="container">
+            <div class="row">
+                <!-- widget row1 
+                <div class="widget">
+                    <h3 class="widget-title">About Us</h3>
+                    <div class="widget-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at minus aliquam. Totam
+                            assumenda sed nihil consectetur commodi architecto repellendus deleniti aperiam minus eaque
+                            laboriosam officiis, saepe nisi repellat aliquam?
+                        </p>
+                        <p class="sns">
+                            <a href="http://facebook.com">
+                                <img alt="facebook" src="/imgs/facebook.png" width="40" height="40">
+                            </a>
+                            <a href="http://google.ca">
+                                <img alt="google" src="/imgs/google.png" width="40" height="40">
+                            </a>
+                            <a href="https://twitter.com/">
+                                <img alt="twitter" src="/imgs/twitter.png" width="40" height="40">
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <img alt="instagram" src="/imgs/instagram.png" width="40" height="40">
+                            </a>
+                            <a href="http://facebook.com">
+                                <img alt="rrs_feedback" src="/imgs/rrs.png" width="40" height="40">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <!-- widget row2 
+                <div class="widget">
+                    <h3 class="widget-title">Flickr Photos</h3>
+                    <div class="widget-body">
+                        <p class="photos">
+                            <img src="/imgs/mini_1.jpg" alt="mini_1" width="60" height="60">
+                            <img src="/imgs/mini_2.jpg" alt="mini_2" width="60" height="60">
+                            <img src="/imgs/mini_3.jpg" alt="mini_3" width="60" height="60">
+                            <img src="/imgs/mini_4.jpg" alt="mini_4" width="60" height="60">
+                            <img src="/imgs/mini_5.jpg" alt="mini_5" width="60" height="60">
+                            <img src="/imgs/mini_6.jpg" alt="mini_6" width="60" height="60">
+                            
+                        </p>
+                    </div>
+                </div>
+                <!-- widget row3 
+                <div class="widget">
+                    <h3 class="widget-title">Recent Tweets</h3>
+                    <div class="widget-body">
+                        <img alt="twitter" src="/imgs/twitter.png" width="30" height="30">
+                        <!--Circle shape
+                        <p class="atsth">
+                            @Minions - Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at minus
+                            aliquam.
+                        </p>
+                        <img alt="twitter" src="/imgs/twitter.png" width="30" height="30">
+                        <!--Circle shape
+                        <p class="atsth">
+                            @Minions - Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at minus
+                            aliquam.
+                        </p>
+                    </div>
+                </div>
+                <!-- widget row4 
+                <div class="widget">
+                    <h3 class="widget-title">Newsletter</h3>
+                    <div class="widget-body">
+                        <p class="newsletter">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit dolor sed enim eum?
+                            Consequatur possimus eveniet perferendis vel maxime quidem rem, saepe error, architecto
+                            mollitia laborum voluptatem nulla repellendus autem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <footer class="footer">
+        <section class="footer_main">
+
+            <div class="footer_prow">
+                <div class="portrait">
+                    <figure class="portrait">
+                        <img src="/imgs/portrait.jpg" alt="portrait person" />
+                    </figure>
+
+                    <div class="portrait_intro">
+                        <p>
+                            Peewee Herman
+                        </p>
+
+                        <p>
+                            Peewee has over 10 years experience in the industry. He is Our crative Director,
+                            digital designer, web designer and front-end developer. He is also pretty good with a
+                            sketch-book.
+                            before starting the compnay Peewee worked as a designer and studio manager for a design
+                            house who
+                            boasted a number of big name clients.
+                        </p>
+
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="footer-content-row">
+
+                <div class="column-span-about">
+                    <div class="heading">About Us</div>
+
+                    <hr />
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at minus aliquam. Totam
+                        assumenda sed nihil consectetur commodi architecto repellendus deleniti aperiam minus eaque
+                        laboriosam officiis, saepe nisi repellat aliquam?
+                    </p>
+
+                    <section class="aboutus_socialmedia">
+
+                        <figure class="aboutus_social">
+                            <a href="http://facebook.com">
+                                <img alt="facebook" src="/imgs/facebook.png" width="40" height="40">
+                            </a>
+                        </figure>
+                        <figure class="aboutus_social">
+                            <a href="http://google.ca">
+                                <img alt="google" src="/imgs/google.png" width="40" height="40">
+                            </a>
+                        </figure>
+                        <figure class="aboutus_social">
+                            <a href="https://twitter.com/">
+                                <img alt="twitter" src="/imgs/twitter.png" width="40" height="40">
+                            </a>
+                        </figure>
+                        <figure class="aboutus_social">
+                            <a href="https://www.instagram.com/">
+                                <img alt="instagram" src="/imgs/instagram.png" width="40" height="40">
+                            </a>
+                        </figure>
+                        <figure class="aboutus_social">
+                            <a href="http://facebook.com">
+                                <img alt="rrs_feedback" src="/imgs/rrs.png" width="40" height="40">
+                            </a>
+                        </figure>
+                    </section>
+                </div>
+
+
+                <div class="column-span-flickr">
+                    <div class="heading">Flickr Photos</div>
+
+                    <hr />
+
+                    <section class="flickr-millions">
+                        <figure class="flickr-millions-image">
+                            <img src="/imgs/mini_1.jpg" alt="mini_1" width="60" height="60">
+                        </figure>
+
+                        <figure class="flickr-millions-image">
+                            <img src="/imgs/mini_2.jpg" alt="mini_2" width="60" height="60">
+                        </figure>
+
+                        <figure class="flickr-millions-image">
+                            <img src="/imgs/mini_3.jpg" alt="mini_3" width="60" height="60">
+                        </figure>
+
+                        <figure class="flickr-millions-image">
+                            <img src="/imgs/mini_4.jpg" alt="mini_4" width="60" height="60">
+                        </figure>
+
+                        <figure class="flickr-millions-image">
+                            <img src="/imgs/mini_5.jpg" alt="mini_5" width="60" height="60">
+                        </figure>
+
+                        <figure class="flickr-millions-image">
+                            <img src="/imgs/mini_6.jpg" alt="mini_6" width="60" height="60">
+                        </figure>
+                    </section>
+
+                </div>
+
+                <div class="column-span-recent">
+                    <div class="heading">Recent Tweets</div>
+
+                    <hr />
+
+                    <div class="tweets-container">
+                        <figure class="tweets-icon">
+                            <img src="img/twitter.png" alt="img description" />
+                        </figure>
+
+                        <div class="tweet-msg">
+                            <span class="recent-tweets">@Minions</span>
+                            <span class="tweets-words">- ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala
+                                jiji wiiiii hahaha po kass</span>
+                        </div>
+                    </div>
+
+                    <div class="tweets-container">
+                        <figure class="tweets-icon">
+                            <img src="img/twitter.png" alt="img description" />
+                        </figure>
+
+                        <div class="tweet-msg">
+                            <span class="recent-tweets">@Minions</span>
+                            <span class='tweets-words'>- ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala
+                                jiji wiiiii hahaha po kass</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column-span-newsletter">
+                    <div class="heading">Newsletter</div>
+
+                    <hr />
+
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum aperiam impedit voluptatum
+                        veniam ratione, minima autem doloribus animi officiis maiores dolorem! Recusandae, dolorum a?
+                        Dolores officia quae culpa animi quis!
+                    </p>
+
+                    <div class="subscribe-section">
+                        <div class="subscribe-email">
+                            <textarea id="email" name="email" placeholder="Enter your Email.."></textarea>
+                        </div>
+
+                        <span class="subscribe-icon">
+                            <img src="img/send-icon.png" alt="img description" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="footer-bar">
+                <img src="img/footer-bar.png" alt="img description" />
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

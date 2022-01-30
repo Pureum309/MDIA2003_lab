@@ -1,0 +1,11 @@
+.imgsection {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.imgsection .imgs1 {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-size: 0.75rem;
+}

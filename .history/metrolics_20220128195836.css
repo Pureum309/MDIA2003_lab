@@ -1,0 +1,334 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.section4_heading, .section5_heading {
+    text-align: center;
+}
+
+.section4, .section5, .footer_main, .clients {
+    display: grid;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-gap: 30px 30px;
+    justify-content: center;
+}
+
+/* .imgsection {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 0px;
+}
+
+.imgs1 {
+    margin: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+/* .imgsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 50px 30px;
+}
+
+.imgs1 {
+    padding: 10px;
+}
+ */
+.imgs1 img {
+    width: 100%;
+}
+
+
+/*Accordion menu stats*/
+.imgsection {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+/*design accordion menu*/
+.accordionMenu {
+    width: 80%;
+    margin: 0 /*auto*/;
+    padding: 0;
+}
+
+.accordionMenu input[type = radio] {
+    display: none;
+}
+
+.accordionMenu label {
+    display: block;
+    height: 50px;
+    line-height: 47px;
+    padding: 0 25px 0 10px;
+    background-color: #19b2de;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid gray;   
+}
+
+/* hide the contents of the menu*/
+.accordionMenu label::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #ffffff;
+    right: 10px;
+    top: 20px;
+    z-index: 10;
+    /* -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
+}
+
+.accordionMenu .content {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+}
+
+.accordionMenu .content .inner {
+    font-size: 1 rem;
+    color: #000000;
+    line-height: 1.5;
+    background-color: #E0E0E0;
+    padding: 5px 5px;
+}
+
+.accordionMenu .inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Animation to the accordions*/
+.accordionMenu input[type=radio]:checked + label:after {
+    transform: rotate(90);
+}
+
+.accordionMenu input[type=radio]:checked + label + .content {
+    max-height: 1000px;
+    height: auto;
+}
+
+/*tabbed menu*/
+.tab_menu {
+max-width: 100%; 
+margin: 32px auto; 
+/* padding: 32px;  */
+background: #fff;
+}
+a {
+    color: #21D4FD; 
+    transition: all 0.3s;
+}
+a:hover {
+    color: white;
+}
+
+.tabbed {
+    overflow-x: hidden; /* so we could easily hide the radio inputs */
+    margin: 32px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tabbed [type="radio"] {
+    /* hiding the inputs */
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+.tab > label {
+    display: block;
+    margin-bottom: -1px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    color: #666;
+    font-size: 12px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;	
+    transition: all 0.3s;
+}
+.tab:hover label {
+    border-top-color: #333;
+    color: #333;
+}
+
+.tab-content {
+    display: none;
+    color: #777;
+}
+
+.tab-content figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.tab-content img {
+    padding: 20px;
+}
+
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
+    border-bottom-color: #fff;
+    background: #fff;
+    color: #222;
+}
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+    display: block;
+}
+
+
+/*tab and accordion align*/
+.accor {
+    margin: 0;
+}
+.section5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+ }
+
+.footer {
+    background-color: #16242f;
+    color: white;
+}
+
+.portrait {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+
+.portrait img {
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+ }
+
+.portrait_info p {
+     margin: 0;
+ }
+
+ .portrait_info p:nth-child(2) {
+     font-style: italic;
+ }
+
+ .footer-crow {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     margin-top: 5em;
+ }
+
+ footer .h1 {
+     font-size: 1.5rem;
+ }
+
+ .sns {
+     margin: 0px;
+     display: grid;
+     grid-template-columns: auto auto auto auto auto auto;
+     align-items: center;
+     padding: 1px;
+ }
+
+.flickr_mini {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    padding: 0;
+}
+
+.mini {
+    margin-left: 0;
+    padding: 0;
+}
+
+.tweets-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.tweets-icon {
+    margin-left: 0;
+}
+
+.tweets-cont img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.at_tweets {
+    color: lightblue;
+}
+
+.words {
+    padding: 10px;
+}
+
+
+
+/* .email_sction input[type=submit] {
+    background-color: #ffb901;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+} */

@@ -1,0 +1,48 @@
+.section4 {
+    text-align: center;
+   }
+
+.imgsection {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 0px;
+  }
+
+  .imgs1 {
+    margin: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  /* .imgs1 img {
+    width: 250 px;
+  } */
+
+  .section5 {
+      text-align: center;
+  }
+
+  /* Accordion menu*/
+  .accordionMenu{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .accordionMenu input[type=radio]{
+        display: none;
+    }
+    .accordionMenu label{
+        display: block;
+        height: 50px;
+        line-height: 47px;
+        padding: 0 25px 0 10px;
+        background: #2c97de;
+        font-size: 18px;
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+        border-bottom: 1px solid #e6e6e6;
+    }
