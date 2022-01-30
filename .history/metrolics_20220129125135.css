@@ -1,0 +1,123 @@
+/** kaycee's css**/
+
+/** HEADER **/
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center; 
+   padding: 0;
+   margin: 0;
+   top: 0;
+}
+
+ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home button, and move it down a bit */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+   
+}
+
+
+.logo_image { /*Scale down the Metrolics logo, and move it down */
+    display: inline-block;
+    margin-top: 30%;
+    left: 0;
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    
+}
+
+.header_elements { /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none; /* Remove bullets */
+    position: relative;
+    text-align: center;
+    transform: translate(-25%, -25%);
+}
+
+
+
+
+.header_elements > li > a { /* Change text colour, remove link's underline */
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Remove underline of links*/
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, 10%);
+   
+    
+}
+
+.header_elements > li > a .header_icons {
+    text-align: left;
+}
+
+
+
+
+
+.header_pagesbutton_icon {
+    padding: auto;
+}
+
+
+.header_homebutton1 {
+    width: 6em;
+    height: 6em;
+    background-color: #25c389;
+    position: relative;
+}
+
+
+.header_pagesbutton {
+    width: 6em;
+    height: 6em;
+    background-color: #ffb901;
+    position: relative;
+}
+
+.header_blogbutton {
+    width: 6em;
+    height: 6em;
+    background-color: #de6262;
+    position: relative;
+}
+
+.header_porfoliobutton {
+    width: 6em;
+    height: 6em;
+    background-color: #1691bd;
+    position: relative;
+}
+
+.header_homebutton2 {
+    width: 6em;
+    height: 6em;
+    background-color: #166ba2;
+    position: relative;
+}
+
+
+.top_fullwidth_background {
+    background-color: #cfcfcf;
+    
+}
+
+
+.top_fullwidth_picture {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

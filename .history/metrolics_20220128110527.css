@@ -1,0 +1,33 @@
+/** kaycee's css**/
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    font-display: block;
+    justify-content: center;
+}
+.logo_image {
+    /* display: inline-block; */
+    left: 0;
+    top: 0;
+    max-width: 40%;
+    height: auto;
+}
+
+.header_elements {
+    display: inline-flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    flex-direction: row;
+   
+  
+}
+
+.header_elements a {
+    text-decoration: none; /*Remove underline of links*/
+    text-align: center;
+}
+
+
