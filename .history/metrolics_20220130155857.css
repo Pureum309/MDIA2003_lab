@@ -16,6 +16,7 @@
 
 h1, h2, h3 {
     font-weight: normal;
+    
 }
 
 a {
@@ -356,9 +357,16 @@ h2 > span.blue_metrolics {
     
 }
 
+
+
+
+
 .latest_work {
 	position: relative;
 }
+
+
+
 
 .date_and_time {
     background-color: #d8605f;
@@ -413,7 +421,6 @@ h2 > span.blue_metrolics {
 
   top: 0; bottom: 0; left: 0; right: 0;
 }
-
 
 
 div.thumnails {
