@@ -16,7 +16,7 @@ html {
     justify-content: center;
     align-content: center;
     justify-items: center;
-    font-family: "Ubuntu", sans-serif;
+
     font-size: 18px;
 }
 
@@ -45,10 +45,11 @@ section.page_header {
 }
 
 .header_elements p {
-    font-size: 10px
+    font-size: 12px;
+
 }
 
-ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home button, and move it down a bit */
+ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home button, and move it down a bit */
     display: block;
     justify-content: center;
     align-items: center;
@@ -63,7 +64,7 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
     max-width: 70%;
     height: auto;
     position: relative;
-    margin-top: 3em;
+    margin-top: 2em;
     
 }
 
@@ -93,17 +94,15 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
 }
 
 
-
 .header_elements > li {
     width: 6em;
-    height: 6em;
+    height: 7em;
     position: relative;
     margin-top: 0;
     left: 0;
-
 }
 
-.header_homebutton1 {
+.header_homebutton_one {
     background-color: #25c389;  
 }
 
@@ -119,7 +118,7 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
     background-color: #1691bd;
 }
 
-.header_homebutton2 {
+.header_homebutton_two {
     background-color: #166ba2;
 }
 
@@ -130,7 +129,7 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
     position: relative;
     left: 0;
     margin: 0;
-    background-image: url("fullwidth_pic.png");
+    background-image: url("../imgs/fullwidth_pic.png");
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -196,7 +195,7 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
     margin: 0;
 }
 
-.slider_content_1, .slider_content_2, .slider_content_3 {
+.slider_content_one, .slider_content_two, .slider_content_three {
     background-color: rgba(255, 255, 255, 0.959);
     background-size: 400px;
     padding: 0.3em;
@@ -204,14 +203,14 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
     
 }
 
-.slider_content_borderleft1, 
-.slider_content_borderleft2, 
-.slider_content_borderleft3 {
+.slider_content_borderleft_one, 
+.slider_content_borderleft_two, 
+.slider_content_borderleft_three {
     position:absolute;
    
 }
 
-.slider_content_borderleft1 {
+.slider_content_borderleft_one {
     background-color: #186aa2;
     background-size: 2px 400px;
 }
@@ -252,18 +251,18 @@ ul.header_elements a.header_homebutton1_icon > p { /* Horizontally align Home bu
     /* text-align: center; */
 }
 
-.featured_item_1,
-.featured_item_2,
-.featured_item_3,
-.featured_item_4 {
+.featured_item_one,
+.featured_item_two,
+.featured_item_three,
+.featured_item_four {
     text-align: center
 }
 
 
-.featured_item_1_content, 
-.featured_item_2_content,
-.featured_item_3_content,
-.featured_item_4_content {
+.featured_item_one_content, 
+.featured_item_two_content,
+.featured_item_three_content,
+.featured_item_four_content {
     font-size: 8pt;
     line-height: 12pt;
     color: rgb(150, 150, 150);
@@ -324,7 +323,7 @@ h2 > span.blue_metrolics {
     margin: auto;
  }
 
-.column2 {
+.column_two {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -478,17 +477,17 @@ div.thumnails {
 
 /* SARAH CSS */
 
-.section4_heading, .section5_heading {
+.fourth_section_heading, .fifth_section_heading {
     text-align: center;
 }
 
-.section4, .section5, .footer_main, .clients {
+.fourth_section, .fifth_section, .last_main, .clients {
     display: grid;
     max-width: 1000px;
     margin: auto;
 }
 
-.section4 {
+.fourth_section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px 10px;
@@ -674,7 +673,7 @@ a:hover {
 .accor {
     margin: 0;
 }
-.section5 {
+.fifth_section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -688,7 +687,7 @@ a:hover {
     justify-content: space-evenly;
  }
 
-.footer {
+.last {
     background-color: #16242f;
     color: white;
 }
@@ -715,14 +714,14 @@ a:hover {
      font-style: italic;
  }
 
- .footer-crow {
+ .last-crow {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      margin-top: 5em;
      grid-gap: 20px;
  }
 
- footer .h1 {
+ footer .h_one {
      font-size: 1.5rem;
  }
 
@@ -799,25 +798,25 @@ input[type=image] {
     display: flex;
 }
 
-.footer_end1, .footer_end2, 
-.footer_end3, .footer_end4, .footer_end5 {
+.last_end_one, .last_end_two, 
+.last_end_three, .last_end_four, .last_end_five {
     width: 100px;
     height: 30px;
 }
 
-.footer_end1 {
+.last_end_one {
     background-color: #25c389;
 }
-.footer_end2 {
+.last_end_two {
     background-color: #ffb901;
 }
-.footer_end3 {
+.last_end_three {
     background-color: #de6262;
 }
-.footer_end4 {
+.last_end_four {
     background-color: #1691bd;
 }
-.footer_end5 {
+.last_end_five {
     background-color: #166ba2;
 }
 
@@ -831,7 +830,7 @@ input[type=image] {
     position: relative;
 }
 
-.image1 {
+.image_one {
     opacity: 1;
     width: 100%;
     height: auto;
@@ -839,7 +838,7 @@ input[type=image] {
     backface-visibility: hidden;
 }
 
-.box1 {
+.boxes {
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
@@ -851,11 +850,11 @@ input[type=image] {
     margin: 0;
 }
 
-.grid_item:hover .image1 {
+.grid_item:hover .image_one {
     opacity: 0.3;
 }
 
-.grid_item:hover .box1 {
+.grid_item:hover .boxes {
     opacity: 1;
 }
 
@@ -865,22 +864,22 @@ input[type=image] {
 }
 
 /*line coloring*/
-.new1 {
+.new_one {
     border-bottom: 2px solid #25c389;
     padding: 10px;
 }
 
-.new2 {
+.new_two {
     border-bottom: 2px solid #ffb901;
     padding: 10px;
 }
 
-.new3 {
+.new_three {
     border-bottom: 2px solid #de6262;
     padding: 10px;
 }
 
-.new4 {
+.new_four {
     border-bottom: 2px solid #1691bd;
     padding: 10px;
 }
