@@ -16,6 +16,7 @@ html {
     justify-content: center;
     align-content: center;
     justify-items: center;
+
     font-size: 18px;
 }
 
@@ -44,7 +45,8 @@ section.page_header {
 }
 
 .header_elements p {
-    font-size: 10px
+    font-size: 12px;
+
 }
 
 ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home button, and move it down a bit */
@@ -92,14 +94,12 @@ ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home
 }
 
 
-
 .header_elements > li {
     width: 6em;
-    height: 6em;
+    height: 7em;
     position: relative;
     margin-top: 0;
     left: 0;
-
 }
 
 .header_homebutton_one {
