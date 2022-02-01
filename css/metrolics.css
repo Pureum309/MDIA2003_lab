@@ -29,7 +29,9 @@ a {
     color: black;
 }
 
-section.page_header {
+/* HEADER SECTION */
+
+section.page_hd {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,12 +46,12 @@ section.page_header {
    
 }
 
-.header_elements p {
+.hd_nav p {
     font-size: 12px;
 
 }
 
-ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home button, and move it down a bit */
+ul.hd_nav a.hd_homebutton_one_icon > p { /* Horizontally align Home button, and move it down a bit */
     display: block;
     justify-content: center;
     align-items: center;
@@ -58,7 +60,7 @@ ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home
 }
 
 
-.header div.logo > img.logo_image { /*Scale down the Metrolics logo, and move it down */
+.hd div.logo > img.logo_image { /*Scale down the Metrolics logo, and move it down */
     float: left;
     left: 0;
     max-width: 70%;
@@ -68,7 +70,7 @@ ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home
     
 }
 
-.header_elements { /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
+.hd_nav { /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
@@ -78,23 +80,23 @@ ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home
     transform: translate(-25%, -25%);
 }
 
-.header_elements > li > a > p { /* Change text colour, remove link's underline */
+.hd_nav > li > a > p { /* Change text colour, remove link's underline */
     color: rgb(255, 255, 255);
     text-decoration: none; /*Remove underline of links*/
     margin: 0;
     padding: 0;
     justify-content: center;
-    align-items: left;
+    /* align-items: left; */
     text-align: left;
-    transform: translate(20%, 300%);  
+    transform: translate(20%, 200%);  
 }
 
-.header_icons {
+.hd_icons {
     transform: translate(0%, 30%);
 }
 
 
-.header_elements > li {
+.hd_nav > li {
     width: 6em;
     height: 7em;
     position: relative;
@@ -102,25 +104,30 @@ ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home
     left: 0;
 }
 
-.header_homebutton_one {
+/* ADD COLOURS TO 5 ELEMENTS IN THE NAV BAR */
+
+.hd_homebutton_one {
     background-color: #25c389;  
 }
 
-.header_pagesbutton {
+.hd_pagesbutton {
     background-color: #ffb901;
 }
 
-.header_blogbutton {
+.hd_blogbutton {
     background-color: #de6262;
 }
 
-.header_porfoliobutton {
+.hd_porfoliobutton {
     background-color: #1691bd;
 }
 
-.header_homebutton_two {
+.hd_homebutton_two {
     background-color: #166ba2;
 }
+
+
+
 
 /* SLIDER */
 
@@ -144,7 +151,7 @@ ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home
  
 }
 
-#top_fullwidth_background {
+.top_fullwidth_background {
     margin-left: 0;
     background-color: #cfcfcf;
     width: 100%;
