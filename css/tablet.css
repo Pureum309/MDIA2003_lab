@@ -1,0 +1,21 @@
+@media screen and (min-width: 40em) and
+(max-width: 63.9375em) {
+	.fourth_section {
+		grid-template-columns: repeat(2, 1fr);
+		margin: auto 3em auto;
+	}
+
+	.fifth_section {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: auto 4em auto;
+	}
+
+	.accordionMenu {
+		width: 100%;
+	}
+
+	.last-crow {
+		grid-template-columns: 1fr 1fr;
+	}
+}
