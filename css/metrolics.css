@@ -150,12 +150,12 @@ ul.hd_nav a.hd_homebutton_one_icon > p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: contain;
     max-width: 100%;
     /* width: 100%; */
     height: 20em;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 0%;
+    margin-right: 0%;
     background-size: 100% 100%;
     justify-content: center;
     align-items: center;
@@ -172,10 +172,10 @@ ul.hd_nav a.hd_homebutton_one_icon > p {
     clear:none; 
     justify-content: center;
     align-content: center;
-    transform: translate(0%, 0%);
+    /* transform: translate(0%, 0%); */
     margin-bottom: 3em;
-    margin-left: -0.5em; /* remove white gap on the left */
-    padding-right: 1em; /* remove white gap on the right */
+    /* margin-left: -0.5em; remove white gap on the left */
+    /* padding-right: 1em; remove white gap on the right */
 }
 
 .top_fullwidth_graybackground {
@@ -225,16 +225,6 @@ div.arrow_right {
     width: auto;
     margin-left: 15%; 
     margin-right: auto;
-}
-
-
-/* HOME SERVICE */
-
-.section_services > p.center_headers {
-    background-color: royalblue;
-    font-size: 8px;
-    padding: 0;
-    margin: 0;
 }
 
 /* SLIDER CONTENTS */
@@ -311,6 +301,13 @@ to parent's: slider_content123 height? */
     justify-content: center;
     margin-top: 20%;
     
+}
+
+.section_services > p.center_headers {
+    background-color: royalblue;
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
 }
 
 .page_section_featured_items {
@@ -397,11 +394,13 @@ div > p.center_headers {
     margin-bottom: 3em;
  }
 
+/* Home Blog */
+
  .section_blog {
-    display: flex;
-	flex-flow: column;
+    display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
 	justify-content: center;
-    margin: auto;
+    margin: 0;
 	
  }
 
@@ -414,9 +413,9 @@ div > p.center_headers {
 .entry_description {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px 50px;
+    grid-gap: 20px 20px;
     float: left;
-    margin: 0 auto;
+    margin: auto;
     justify-content: center;
     align-content: flex-start;
     align-items: center;
@@ -429,7 +428,6 @@ div > p.center_headers {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    margin: auto;
 }
 
 .latest_work_section {
@@ -487,13 +485,12 @@ div > p.center_headers {
     bottom: 0;
 }
 
-#blue_bar_header {
+.sampletext {
     position: absolute;
     text-align: left;
     color: white;
     padding: 0;
     margin: 0;
-    bottom: 1em;
     left: 1em;
 }
 
@@ -503,6 +500,7 @@ div > p.center_headers {
     flex-direction: column;
     top: 0;
     left: 0;
+    margin: 0;
 }
 
 .thumbnails .bluebar {

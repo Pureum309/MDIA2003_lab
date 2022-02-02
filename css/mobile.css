@@ -1,1 +1,87 @@
 /* FIRST HALF SCREEN */
+
+@media screen and (max-width: 39.9375em) {
+    header a:not(:first-child) {display: none;}
+  header a.hd_homebutton_one_icon
+  , a.hd_pagesbutton_icon, 
+  a.hd_blogbutton_icon,
+  a.hd_porfoliobutton_icon
+   {
+    float: left;
+    display: block;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+}
+
+    .top_fullwidth_graybackground {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: auto 4em auto;
+        max-width: 100%;
+        margin: 0;
+        margin-left: 0;
+        left: 0;
+        position: relative;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+   section.home_page_intro h2 {
+       top: 0;
+       margin-top: 18em;
+   }
+
+   .third_header {
+       top:0;
+       margin: 0;
+   }
+
+    .page_section_featured_items {
+        width: 100%;
+    }
+
+    .entry_description {
+        grid-template-columns: 1fr;
+        margin: auto 4em auto;
+    }
+
+    .portrait img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+
+/* SECOND HALF PART */
+
+@media screen and (max-width: 39.9375em) {
+    .fourth_section {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto 3em auto;
+    }
+
+    .fifth_section {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: auto 4em auto;
+    }
+
+    .accordionMenu {
+        width: 100%;
+    }
+
+    .last-crow {
+        grid-template-columns: 1fr;
+        margin: auto 4em auto;
+    }
+
+    .portrait img {
+        width: 160px;
+        height: 160px;
+    }
+}
