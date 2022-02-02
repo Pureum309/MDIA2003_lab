@@ -420,11 +420,7 @@ div > p.center_headers {
 	flex-flow: column;
 	justify-content: center;
     margin: auto;
-	/* margin: 5px 0; */
-    /* display:grid;
-    grid-template-columns: 1fr 1fr 1fr; */
-	/* Add a 10px gap between columns  
-	grid-column-gap: 10px; */
+	
  }
 
  .section_blog > .third_header, .entry_description {
@@ -463,21 +459,7 @@ div > p.center_headers {
     align-content: flex-start;
     align-items: center;
     
-    /* display: flex;
-    display: flex;
-    flex-direction: row;      */
-    /* make main axis horizontal (default setting) */
-    /* justify-content: center;  */
-    /* center items horizontally, in this case */
-    /* align-items: center;  */
-    /* padding-left: 15em;
-    padding-right: 10em; */
-    /* align-items: center;
-    justify-content: center; */
-    /* box-sizing: border-box; */
-    /* line-height: 24px; */
-    /* max-width: 960px;
-	width: 95%; */
+
 	
     
 }
