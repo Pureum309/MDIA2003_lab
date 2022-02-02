@@ -5,7 +5,7 @@ html {
 /* KAYCEE CSS */
 /** HEADER **/
 
-section.first_half {
+#first_half {
     padding: 0;
     margin: 0;
     /* margin-top:0px;
@@ -13,12 +13,12 @@ section.first_half {
     justify-content: center;
     align-content: center;
     justify-items: center;
+
     font-size: 18px;
 }
 
 h1, h2, h3 {
     font-weight: normal;
-    font-size: 24px;
 }
 
 a {
@@ -26,36 +26,27 @@ a {
     color: black;
 }
 
-/* HEADER SECTION */
-
-header {
-    display: flex;
-    flex-direction: row;
-    margin-top: -0.5em; /* remove the white gap between header nav bar and the top */
-}
-
-header, .hd_nav {
+section.page_header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     text-align: center;
-    
-    /* margin-left: 10%; */
+    gap: 5em;
+    margin-left: 10%;
 }
 
-.hd_nav {
+.page_nav {
     max-width: 100%;
-    /* margin-left: 15em; */
+   
 }
 
-.hd_nav p {
+.header_elements p {
     font-size: 12px;
 
 }
 
-/* Horizontally align Home button, and move it down a bit */
-ul.hd_nav a.hd_homebutton_one_icon > p { 
+ul.header_elements a.header_homebutton_one_icon > p { /* Horizontally align Home button, and move it down a bit */
     display: block;
     justify-content: center;
     align-items: center;
@@ -63,177 +54,136 @@ ul.hd_nav a.hd_homebutton_one_icon > p {
    
 }
 
-/*Scale down the Metrolics logo, and move it down */
-.hd div.logo > img.logo_image { 
-    float: right;
-    right: 0;
-    max-width: 90%;
+
+.header div.logo > img.logo_image { /*Scale down the Metrolics logo, and move it down */
+    float: left;
+    left: 0;
+    max-width: 70%;
     height: auto;
     position: relative;
-    margin-top: 25%;
+    margin-top: 2em;
     
 }
 
-/* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
-.hd_nav { 
+.header_elements { /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
     list-style-type: none; /* Remove bullets */
     position: relative;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    /* transform: translate(-25%, -25%); */
+    transform: translate(-25%, -25%);
 }
 
-/* Change text colour, remove link's underline */
-.hd_nav > li > a > p { 
+.header_elements > li > a > p { /* Change text colour, remove link's underline */
     color: rgb(255, 255, 255);
     text-decoration: none; /*Remove underline of links*/
     margin: 0;
     padding: 0;
     justify-content: center;
-    /* align-items: left; */
+    align-items: left;
     text-align: left;
-    transform: translate(20%, 200%);  
+    transform: translate(20%, 300%);  
 }
 
-.hd_icons {
+.header_icons {
     transform: translate(0%, 30%);
 }
 
-/* Set sizes for the nest nav bar */
-.hd_nav > li {
-    margin: 0;
+
+.header_elements > li {
     width: 6em;
-    height: 6em;
+    height: 7em;
     position: relative;
     margin-top: 0;
     left: 0;
 }
 
-/* ADD COLOURS TO 5 ELEMENTS IN THE NAV BAR */
-
-.hd_homebutton_one {
+.header_homebutton_one {
     background-color: #25c389;  
 }
 
-.hd_pagesbutton {
+.header_pagesbutton {
     background-color: #ffb901;
 }
 
-.hd_blogbutton {
+.header_blogbutton {
     background-color: #de6262;
 }
 
-.hd_porfoliobutton {
+.header_porfoliobutton {
     background-color: #1691bd;
 }
 
-.hd_homebutton_two {
+.header_homebutton_two {
     background-color: #166ba2;
 }
-
-
-
 
 /* SLIDER */
 
 .top_fullwidth_section {
     display: flex;
     position: relative;
-    top: 0;
     left: 0;
     margin: 0;
     background-image: url("../imgs/fullwidth_pic.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
     max-width: 100%;
-    /* width: 100%; */
-    height: 30em;
+    height: 300px;
     margin-left: 15%;
     margin-right: 15%;
-    background-size: 100% 100%;
+    background-size: cover;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
     /* transform:  translate(0%, 50%); */
  
 }
 
-.top_fullwidth_graybackground {
+#top_fullwidth_background {
+    margin-left: 0;
     background-color: #cfcfcf;
-    background-size: cover;
     width: 100%;
-    height: auto;
+    height: 300px;
     float:left;
     clear:none; 
     justify-content: center;
     align-content: center;
-    transform: translate(0%, 0%);
-    margin-bottom: 3em;
-    margin-left: -0.5em; /* remove white gap on the left */
-    padding-right: 1em; /* remove white gap on the right */
-}
-
-.top_fullwidth_graybackground {
-    position:relative;
-    margin-top: auto;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    /* top: 0;
-    left: 0; */
+    transform: translate(0%, -25%);
 }
 
 
-.top_fullwidth_graybackground:before {
-    content:""; /* so that it shows up */
-    height:100%; /* so it takes up the full height */
-}
-
-/* ARROWS */
 .arrows {
     cursor: pointer;
     position: absolute;
-    margin-top: 0;
     width: 0;
     height: 0;
     border-style: solid;  
 }
 
-div.arrow_left {
-    border-width: 10px 40px 30px 0;
+#arrow_left {
+    border-width: 30px 40px 30px 0;
     border-color: transparent;
     left: 0;
     margin-left: 30px;
     
 }
 
-/* .top_fullwidth_section > .arrows {
-    top: 0;
-    margin-top: 0;
-} */
-
-div.arrow_right {
-    border-width: 10px 0px 30px 0px;
+#arrow_right {
+    border-width: 30px 0px 30px 0px;
     border-color: transparent;
     right: 2em;
     margin-right: 30px;
 }
 
-.slider_contents {
-    overflow: hidden;
+#slider_contents {
+    /* position: absolute; */
+    /* display: flex; */
     position: relative;
-    width: auto;
     margin-left: 15%; 
     margin-right: auto;
 }
-
-
-/* HOME SERVICE */
 
 .section_services > p.center_headers {
     background-color: royalblue;
@@ -242,82 +192,32 @@ div.arrow_right {
     margin: 0;
 }
 
-/* SLIDER CONTENTS */
-
-.slider_contents > div {
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-}
-
-/* give 3 slider contents white background colour */
 .slider_content_one, .slider_content_two, .slider_content_three {
     background-color: rgba(255, 255, 255, 0.959);
+    background-size: 400px;
     padding: 0.3em;
-    padding-left: 0.5em;
-    /* width: -moz-fit-content;
-    width: fit-content;
-    block-size: fit-content; */
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
+    margin: 0.1rem;
     
 }
 
-/* Make the parents' div stick so that the childs' could be overlap on top */
-.borderleft_one, 
-.borderleft_two, 
-.borderleft_three {
+.slider_content_borderleft_one, 
+.slider_content_borderleft_two, 
+.slider_content_borderleft_three {
     position:absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    left: 0;
+   
 }
 
-/* Expand floated child: borderleft div's height 
-to parent's: slider_content123 height? */
-.slider_content_one, 
-.slider_content_two,
-.slider_content_three {
-    overflow: hidden;
-    position: relative;
-}
-
-.slider_content_one > div.borderleft_one {
+.slider_content_borderleft_one {
     background-color: #186aa2;
-    width: 5px;
-    height: 100%;
-    align-items: stretch;
-    float: left;
+    background-size: 2px 400px;
 }
 
-.slider_content_two > div.borderleft_two {
-    background-color: #de6262;
-    width: 5px;
-    height: 100%;
-    align-items: stretch;
-    float: left;
-}
 
-.slider_content_three > div.borderleft_three {
-    background-color: #ffb901;
-    width: 5px;
-    height: 100%;
-    align-items: stretch;
-    float: left;
-    /* padding: 2em; */
-}
 
 /* h3 {
     margin-top: -20;
 } */
 
-
-
-
-/* SECTION SERVICE */
 .section_services {
     justify-content: center;
     margin-top: 20%;
@@ -390,7 +290,6 @@ h2 > span.blue_metrolics {
     color: #91c2eb
 }
 
-
 .third_header {
     text-align: center;
     grid-column: span 3;
@@ -398,15 +297,7 @@ h2 > span.blue_metrolics {
     margin: 0;
  }
 
-div > p.center_headers {
-    font-size: 14px;
-    margin-top: -1em;
-    margin-bottom: 1em;
-}
-
- .first_header, 
- .second_header, 
- .third_header  {
+ #center_headers {
     font-size: 8px;
     margin-top: -2em;
     margin-bottom: 3em;
@@ -429,10 +320,10 @@ div > p.center_headers {
     margin: auto;
  }
 
-/* .column_two {
+.column_two {
     margin-left: 20px;
     margin-right: 20px;
-} */
+}
 
  
     /* 
@@ -449,50 +340,22 @@ div > p.center_headers {
     
 
 
-    
 .entry_description {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px 50px;
-    float: left;
-    margin: 0 auto;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: center;
-    
-    /* display: flex;
     display: flex;
-    flex-direction: row;      */
-    /* make main axis horizontal (default setting) */
-    /* justify-content: center;  */
-    /* center items horizontally, in this case */
-    /* align-items: center;  */
+    display: flex;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center; 
     /* padding-left: 15em;
     padding-right: 10em; */
     /* align-items: center;
     justify-content: center; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     /* line-height: 24px; */
     /* max-width: 960px;
 	width: 95%; */
 	
     
-}
-
-.latest_work_section {
-    /* width: 90%; */
-    scale: 0.8;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    margin: auto;
-}
-
-.latest_work_section {
-    display: grid;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
 }
 
 .latest_work {
@@ -502,11 +365,8 @@ div > p.center_headers {
 .date_and_time {
     background-color: #d8605f;
     position: absolute;
-    font-size: 12px;
-    padding: 2em;
-    height: 20%;
-    /* width: 100px;
-    height: 80px; */
+    width: 100px;
+    height: 80px;
     padding: 0;
     margin: 0;
 }
@@ -514,23 +374,8 @@ div > p.center_headers {
 .date_and_time > p {
     text-align: center;
     color: white;
-    top: 0;
-    padding: 0.5em;
-    margin-top: 0.2em;
 }
 
-.sampletext {
-    text-align: left;
-    margin-left: 1em;
-}
-
-.sampletext p:nth-child(1) {
-    font-weight: bold;
-}
-
-.sampletext p:nth-child(2) {
-    margin-top: -1em;
-}
 
 .col-xs-12-1 {
     background-color: #19b2de;
@@ -553,22 +398,6 @@ div > p.center_headers {
     left: 1em;
 }
 
-.thumbnails {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-}
-
-.thumbnails .bluebar {
-    overflow: hidden;
-    position: relative;
-    scale: -0.9;
-    pointer-events:none;
-}
-
-
 #blue_bar_icon {
     position: absolute;
     padding: 0;
@@ -577,7 +406,69 @@ div > p.center_headers {
     right: 1em;
 }
 
-/* Kaycee's css end here*/
+/* .entry_description {
+    position: relative;
+}
+
+.text_icon_bar {
+    position: absolute;
+
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+
+
+div.thumnails {
+    position: relative;
+}
+
+
+
+
+.blue_bar_icon {
+    position: relative;
+    display: flex;
+    transform: translate(450%, 90%);
+    
+}
+
+
+
+
+.sample_text {
+    display: flex;
+    position: relative;
+    color:rgb(255, 255, 255);
+    justify-content: end;
+    margin-left: 1.5em;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+
+  
+    
+    background-color: #19b2de;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    transform: translate(0%, 300%); 
+
+
+#bluebar {
+    background-color: #19b2de;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+     padding: 0;
+    margin: 0;
+    
+} */
+
+
 
 
 
