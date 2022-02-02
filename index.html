@@ -19,16 +19,16 @@
 <body>
     <main>
         <section class="first_half">
-            <!-- This is the logo in the header -->
-            <section class="page_hd">
+<!--======================================== HEADER ======================================-->
                 <header class="hd">
+                      <!-- This is the logo in the header -->
                     <div class="logo">
                         <img class="logo_image" src="./imgs/metrolics_logo.png">
                     </div>
-                </header>
-                    <!-- This is 5 elements: Home, Page, Blog, Portfolio, and Home in the header -->
-                    <div class="page_nav">
+ <!--======================================== NEST NAV BAR ========================================-->                    
+                    <!-- This is the nest navigation menu that has 5 elements: Home, Page, Blog, Portfolio, and Home in the header -->
                         <ul class="hd_nav">
+                            <!--================== HOME BUTTON ==================-->
                             <li class="hd_homebutton_one">
                                 <div class="hd_homebutton_one_background"></div>
                                 <a href="" class="hd_homebutton_one_icon">
@@ -36,6 +36,7 @@
                                     <p>Home</p>  
                                 </a>      
                             </li>
+                            <!--================== PAGE BUTTON ==================-->
                             <li class="hd_pagesbutton">
                                 <div class="hd_pagesbutton_background"></div>
                                 <a href="" class="hd_pagesbutton_icon">
@@ -43,6 +44,7 @@
                                     <p>Pages</p>
                                 </a>
                             </li>
+                            <!--================== BLOG BUTTON ==================-->
                             <li href="" class="hd_blogbutton">
                                 <div class="hd_blogbutton_background"></div>
                                 <a href="" class="hd_blogbutton_icon">
@@ -50,6 +52,7 @@
                                     <p>Blog</p>
                                 </a>
                             </li>
+                            <!--================== PORTFOLIO BUTTON ==================-->
                             <li href="" class="hd_porfoliobutton">
                                 <div class="hd_porfoliobutton_background"></div>
                                 <a href="" class="hd_porfoliobutton_icon">
@@ -57,6 +60,7 @@
                                     <p>Portfolio</p>
                                 </a>
                             </li>
+                            <!--================== HOME BUTTON ==================-->
                             <li href="" class="hd_homebutton_two">
                                 <div class="hd_homebutton_two_background"></div>
                                 <a href="" class="hd_homebutton_two_icon">
@@ -65,18 +69,15 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>    
-            </section>    
-            <!-- This is the big picture below the header that could be swipe to both direction -->
-            
-                <section class="slider"> 
-                    <div class="top_fullwidth_background">
+                </header>
+<!--======================================== SLIDER ======================================-->                
+                <!-- This is the big picture below the header that could be swipe to both direction -->
+                    <div class="top_fullwidth_graybackground">
                         <!-- This div is for the graytone background that sitting behind the slider picture -->
-                        <!-- <img class="top_fullwidth_picture" src="./imgs/fullwidth_pic.png"> -->
-                    
+                        <!-- <img class="top_fullwidth_picture" src="./imgs/fullwidth_pic.png"> --> 
                         <div class="top_fullwidth_section">
-                        <!-- These are two left and right arrows, and 3 contents inside the picture in between-->
-                        <!-- LEFT ARROW -->
+                            <!-- These are two left and right arrows, and 3 contents inside the picture in between-->
+                        <!--================== LEFT ARROW ==================-->
                             <div class="arrows arrow_left"> 
                                 <img class="./imgs/arrow_left_picture" src="./imgs/slide_left.png"> 
                                 <!-- The arrow is white so it won't show up on it own, only appear when we put in css and make it overlaps on the fullwidth picture -->
@@ -84,26 +85,26 @@
                             <!-- This is the 3 contents on top of the big picture-->
                             <div class="slider_contents">
                                 <div class="slider_content_one">
-                                    <div class="slider_content_borderleft_one"></div>
                                     <span>Metro Style</span>
+                                    <div class="borderleft_one"></div>
                                 </div>
                                 <div class="slider_content_two">
-                                    <div class="slider_content_borderleft_two"></div>
                                     <span>Retina Ready</span>
+                                    <div class="borderleft_two"></div>
                                 </div>
                                 <div class="slider_content_three">
-                                    <div class="slider_content_borderleft_three"></div>
                                     <span>Responsive Design</span>
+                                    <div class="borderleft_three"></div>
                                 </div>
                             </div>
-                            <!-- RIHGT ARROW-->
+                            <!--================== RIGHT ARROW ==================-->
                             <div class="arrows arrow_right"> 
                                 <img class="./imgs/arrow_left_picture" src="./imgs/slide_right.png">
                                 <!-- The arrow is white so it won't show up on it own, only appear when we put in css and make it overlaps on the fullwidth picture -->
                             </div>
                         </div>
                     </div>
-                </section>  
+<!--======================================== HOME INTRO ======================================-->                       
                 <!-- These are the headers that are in the center of the page -->
                 <section class="home_page_intro">
                     <!-- This is the first big header -->
@@ -113,16 +114,19 @@
                         <!-- I wonderred should I use <p> or <h2>, <h3>?
                             Okay, i think i should use <h2> <h3> then -->
                     </div>
-                </section>     
+                </section>  
+<!--======================================== HOME SERVICE ======================================-->                   
                 <!-- This is the second smaller header-->
                 <section class="section_services">
                     <div class="second_header">
                         <h3>Things That We Do</h3>
-                        <p id="center_headers">Ask us what we can do for you</p>
+                        <p class="center_headers">Ask us what we can do for you</p>
                     </div>
 
-                    <!-- This is the 4 featured items: Web Soloution, Photography, Web Development, Web Design -->
+                    <!--====================== This is the 4 featured items: Web Soloution, Photography, Web Development, Web Design ======================-->
                     <section class="page_section_featured_items">
+                        
+                        <!--================== WEB SOLUTION ==================-->
                         <div class="featured_item_one">
                             <img class="featured_item_one_image" src="./imgs/featured_item1_icon.png" alt="img picture"/>
                             <!-- This is the header of the first fetured items-->
@@ -136,6 +140,8 @@
                                 this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
                             </p>
                         </div>
+
+                        <!--================== PHOTOGRAPHY ==================-->
                         <div class="featured_item_two">
                             <img class="featured_item_two_image" src="./imgs/featured_item2_icon.png" alt="img picture"/>
                             <!-- This is the header of the second fetured items-->
@@ -148,6 +154,8 @@
                                     this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
                                 </p>
                         </div>
+                        
+                        <!--================== WEB DEVELOPER ==================-->
                         <div class="featured_item_three">
                             <img class="featured_item_three_image" src="./imgs/featured_item3_icon.png" alt="img picture"/>           
                             <!-- This is the header of the third fetured items-->
@@ -160,6 +168,8 @@
                                     this block of text only display until the word "materials". Idk should we cut the rest off or keep it as full like this. -->
                                 </p>
                         </div>
+                        
+                        <!--================== WEB DESIGN ==================-->
                         <div class="featured_item_four">
                             <img class="featured_item_four_image" src="./imgs/featured_item4_icon.png" alt="img picture"/>
                             <!-- This is the header of the fourth fetured items-->
@@ -174,26 +184,31 @@
                         </div> 
                     </section>
                 </section>
-                    
+
+<!--======================================== HOME BLOG ======================================-->                  
                 <section class="section_blog">
                     <!-- This is the third smallest header-->
-                    <div class="third_header" class="center_headers">
+                    <div class="third_header">
                         <h3>What's Up Lately?</h3>
-                        <p id="center_headers">Read upon our latest work</p>
+                        <p class="center_headers">Read upon our latest work</p>
                     </div>    
                 
+                    <!--================== LASTEST WORKS ==================-->
                     <!-- This is the three pictures about latest work that below What's Up Lately -->
                     <div class="latest_work_section">
                         <div class="entry_description">
+                            
+                            <!--============== 1ST ==============-->
                             <div class="column_one">
                                 <div class="latest_work">
                                     <div class="date_and_time">
-                                        <p>29 <br> Nov.2013</p>
+                                        <p>29<br> Nov.2013</p>
                                     </div>
                                     <div class="col-xs-12-1">
                                         <a class="thumbnail" href="sidebar-right.html">
-                                            <div class="sample_text">
-                                                <p id="blue_bar_header" class="blue_bar_contents">Sample Image Post <br> Photography</p>
+                                            <div class="sampletext">
+                                                <p>Sample Image Post</p> 
+                                                <p>Photography</p>
                                             </div>         
                                         </a>
                                         <span class="entry_icon">
@@ -208,7 +223,9 @@
                                         <div class="bluebar"></div>
                                     </div>
                                 </div>     
-                            </div>    
+                            </div> 
+
+                            <!--============== 2ND ==============-->   
                             <div class="column_two">
                                 <div class="latest_work">
                                     <div class="date_and_time">
@@ -216,8 +233,9 @@
                                     </div>
                                     <div class="col-xs-12-1">
                                         <a class="thumbnail" href="sidebar-right.html">
-                                            <div class="sample_text">
-                                                <p id="blue_bar_header" class="blue_bar_contents">Sample Image Post <br> Photography</p>
+                                            <div class="sampletext">
+                                                <p>Sample Image Post</p> 
+                                                <p>Photography</p>
                                             </div>         
                                         </a>
                                         <span class="entry_icon">
@@ -232,7 +250,9 @@
                                         <div class="bluebar"></div>
                                     </div>
                                 </div>     
-                            </div>    
+                            </div>   
+                            
+                            <!--============== 3RD ==============-->
                             <div class="column_three">
                                 <div class="latest_work">
                                     <div class="date_and_time">
@@ -240,8 +260,9 @@
                                     </div>
                                     <div class="col-xs-12-1">
                                         <a class="thumbnail" href="sidebar-right.html">
-                                            <div class="sample_text">
-                                                <p id="blue_bar_header" class="blue_bar_contents">Sample Image Post <br> Photography</p>
+                                            <div class="sampletext">
+                                                <p>Sample Image Post</p> 
+                                                <p>Photography</p>
                                             </div>         
                                         </a>
                                         <span class="entry_icon">
@@ -268,6 +289,7 @@
                     </div>   
                 </section>    
         </section> 
+<!--======================================== END FIRST HALF ======================================--> 
 
         <!-- Sarah -->
         <section class="fourth_section_heading">
