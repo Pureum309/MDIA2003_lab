@@ -138,9 +138,6 @@ ul.hd_nav a.hd_homebutton_one_icon > p {
     background-color: #166ba2;
 }
 
-
-
-
 /* SLIDER */
 
 .top_fullwidth_section {
@@ -214,11 +211,6 @@ div.arrow_left {
     margin-left: 30px;
     
 }
-
-/* .top_fullwidth_section > .arrows {
-    top: 0;
-    margin-top: 0;
-} */
 
 div.arrow_right {
     border-width: 10px 0px 30px 0px;
@@ -313,12 +305,6 @@ to parent's: slider_content123 height? */
     /* padding: 2em; */
 }
 
-/* h3 {
-    margin-top: -20;
-} */
-
-
-
 
 /* SECTION SERVICE */
 .section_services {
@@ -336,10 +322,6 @@ to parent's: slider_content123 height? */
     font-size: 16px;
     padding-left: 5em;
     padding-right: 5em;
-    /* grid-column-end: fr;
-    grid-column-start: fr;
-    grid-row-end: fr;
-    grid-row-start: fr; */
     line-height: 24px;
     row-gap: 24px;
     
@@ -428,26 +410,6 @@ div > p.center_headers {
     margin: auto;
  }
 
-/* .column_two {
-    margin-left: 20px;
-    margin-right: 20px;
-} */
-
- 
-    /* 
-    .entry_description {
-    margin-left: 10em;
-    margin-right: 10em;
- }display: grid;
-    box-sizing: border-box;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 24px;
-    font-size: 16px;
-    padding-left: 10em;
-    padding-right: 10em; */
-    
-
-
     
 .entry_description {
     display: grid;
@@ -458,10 +420,7 @@ div > p.center_headers {
     justify-content: center;
     align-content: flex-start;
     align-items: center;
-    
-
-	
-    
+ 
 }
 
 .latest_work_section {
