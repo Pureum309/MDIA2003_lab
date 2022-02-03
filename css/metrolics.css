@@ -472,6 +472,7 @@ div > p.center_headers {
 
 .thumbnail_group {
     position: relative;
+    color: white;
 }
 
 .lastest_work_pic {
@@ -500,6 +501,7 @@ div > p.center_headers {
     box-sizing: border-box;
     line-height: 0;
 }
+
 
 .blue_bar_camera_icon {
     position: absolute;
