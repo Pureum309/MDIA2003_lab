@@ -23,7 +23,7 @@
                 <header class="hd">
                       <!-- This is the logo in the header -->
                     <div class="logo">
-                        <img class="logo_image" src="./imgs/metrolics_logo.png">
+                        <img class="logo_image" src="./imgs/metrolics_logo.png" alt="logo">
                     </div>
  <!--======================================== NEST NAV BAR ========================================-->                    
                     <!-- This is the nest navigation menu that has 5 elements: Home, Page, Blog, Portfolio, and Home in the header -->
@@ -31,7 +31,7 @@
                             <!--================== HOME BUTTON ==================-->
                             <li class="hd_homebutton_one">
                                 <div class="hd_homebutton_one_background"></div>
-                                <a href="" class="hd_homebutton_one_icon">
+                                <a class="hd_homebutton_one_icon">
                                     <img class="hd_icons" src="./imgs/homebutton1_logo.png" alt="This is a home icon">
                                     <p>Home</p>  
                                 </a>      
@@ -39,31 +39,31 @@
                             <!--================== PAGE BUTTON ==================-->
                             <li class="hd_pagesbutton">
                                 <div class="hd_pagesbutton_background"></div>
-                                <a href="" class="hd_pagesbutton_icon">
+                                <a class="hd_pagesbutton_icon">
                                     <img class="hd_icons" src="./imgs/pagebutton_logo.png" alt="This is a page icon">
                                     <p>Pages</p>
                                 </a>
                             </li>
                             <!--================== BLOG BUTTON ==================-->
-                            <li href="" class="hd_blogbutton">
+                            <li class="hd_blogbutton">
                                 <div class="hd_blogbutton_background"></div>
-                                <a href="" class="hd_blogbutton_icon">
+                                <a class="hd_blogbutton_icon">
                                     <img class="hd_icons"  src="./imgs/blogbutton_logo.png" alt="This is a blog icon">
                                     <p>Blog</p>
                                 </a>
                             </li>
                             <!--================== PORTFOLIO BUTTON ==================-->
-                            <li href="" class="hd_porfoliobutton">
+                            <li class="hd_porfoliobutton">
                                 <div class="hd_porfoliobutton_background"></div>
-                                <a href="" class="hd_porfoliobutton_icon">
+                                <a class="hd_porfoliobutton_icon">
                                     <img class="hd_icons"  src="./imgs/portfoliobutton_logo.png" alt="This is a portfolio icon">
                                     <p>Portfolio</p>
                                 </a>
                             </li>
                             <!--================== HOME BUTTON ==================-->
-                            <li href="" class="hd_homebutton_two">
+                            <li class="hd_homebutton_two">
                                 <div class="hd_homebutton_two_background"></div>
-                                <a href="" class="hd_homebutton_two_icon">
+                                <a class="hd_homebutton_two_icon">
                                     <img class="hd_icons"  src="./imgs/homebutton2_logo.png" alt="This is a home icon">
                                     <p>Home</p>    
                                 </a>
@@ -79,7 +79,7 @@
                             <!-- These are two left and right arrows, and 3 contents inside the picture in between-->
                         <!--================== LEFT ARROW ==================-->
                             <div class="arrows arrow_left"> 
-                                <img class="./imgs/arrow_left_picture" src="./imgs/slide_left.png"> 
+                                <img class="./imgs/arrow_left_picture" src="./imgs/slide_left.png" alt="picture"> 
                                 <!-- The arrow is white so it won't show up on it own, only appear when we put in css and make it overlaps on the fullwidth picture -->
                             </div>
                             <!-- This is the 3 contents on top of the big picture-->
@@ -99,7 +99,7 @@
                             </div>
                             <!--================== RIGHT ARROW ==================-->
                             <div class="arrows arrow_right"> 
-                                <img class="./imgs/arrow_left_picture" src="./imgs/slide_right.png">
+                                <img class="./imgs/arrow_left_picture" src="./imgs/slide_right.png" alt="picture">
                                 <!-- The arrow is white so it won't show up on it own, only appear when we put in css and make it overlaps on the fullwidth picture -->
                             </div>
                         </div>
@@ -198,73 +198,58 @@
                         <div class="entry_description">
                             
                             <!--============== 1ST ==============-->
-                            <div class="columns">
+                            <div class="columns first_column">
                                 <div class="thumbnail_group">
+                                	<img class="lastest_work_pic" 
+                                    	src="./imgs/latest_work_thumbnail.png" alt="this is a thumbnail">
                                     <div class="date_and_time">
-                                        <p>29<br> Nov.2013</p>
+                                        <p class="date">29</p>
+                                    	<p>Nov.2013</p>
                                     </div>
-                                        <section class="sample_and_pic">
-                                            <div class="sampletext">
-                                                <p>Sample Image Post<p>Photography</p></p>
-                                                <img class="blue_bar_camera_icon" 
-                                                src="./imgs/blue_bar_camera_icon.png" alt="camera icon"> 
-                                            </div>
-                                            
-                                                
-                                                
-                                                <div class="lastest_work_thumbnail">
-                                                    <img class="lastest_work_pic" 
-                                                    src="./imgs/latest_work_thumbnail.png" alt="this is a thumbnail">
-                                                </div>
-                                            
-                                        </section>
+                                    <div class="post_bar">
+                                    	<div class="post_bar_text">
+	                                    	<h4>Sample Image Post</h4> 
+	                                        <p>Photography</p>
+	                                    </div>
+                                        <img class="blue_bar_camera_icon" 
+                                        	src="./imgs/blue_bar_camera_icon.png" alt="camera icon">
+                                    </div>
                                 </div>     
-                            </div> 
+                            </div>
 
+                            <div class="columns">
+                                <div class="thumbnail_group">
+                                	<img class="lastest_work_pic" 
+                                    	src="./imgs/latest_work_thumbnail.png" alt="this is a thumbnail">
+                                    <div class="date_and_time">
+                                        <p class="date">29</p>
+                                    	<p>Nov.2013</p>
+                                    </div>
+                                    <div class="post_bar">
+                                    	<h4>Sample Image Post</h4> 
+                                        <p>Photography</p>
+                                        <img class="blue_bar_camera_icon" 
+                                        	src="./imgs/blue_bar_camera_icon.png" alt="camera icon">
+                                    </div>
+                                </div>     
+                            </div>
 
-                            <!--============== 2ND ==============-->   
                             <div class="columns">
                                 <div class="thumbnail_group">
+                                	<img class="lastest_work_pic" 
+                                    	src="./imgs/latest_work_thumbnail.png" alt="this is a thumbnail">
                                     <div class="date_and_time">
-                                        <p>29<br> Nov.2013</p>
+                                        <p class="date">29</p>
+                                    	<p>Nov.2013</p>
                                     </div>
-                                        <div class="sampletext">
-                                            <p>Sample Image Post<p>Photography</p></p>
-                                            <img class="blue_bar_camera_icon" 
-                                            src="./imgs/blue_bar_camera_icon.png" alt="camera icon"> 
-                                        </div>
-                                        <div class="thumbnail_blue_text">
-                                            
-                                            
-                                            <div class="lastest_work_thumbnail">
-                                                <img class="lastest_work_pic" 
-                                                src="./imgs/latest_work_thumbnail.png" alt="this is a thumbnail">
-                                            </div>
-                                        </div>
-                                </div>     
-                            </div> 
-                            <!--============== 3RD ==============-->
-                            <div class="columns">
-                                <div class="thumbnail_group">
-                                    <div class="date_and_time">
-                                        <p>29<br> Nov.2013</p>
+                                    <div class="post_bar">
+                                    	<h4>Sample Image Post</h4> 
+                                        <p>Photography</p>
+                                        <img class="blue_bar_camera_icon" 
+                                        	src="./imgs/blue_bar_camera_icon.png" alt="camera icon">
                                     </div>
-                                        <div class="sampletext">
-                                            <p>Sample Image Post<p>Photography</p></p>
-                                            <img class="blue_bar_camera_icon" 
-                                            src="./imgs/blue_bar_camera_icon.png" alt="camera icon"> 
-                                        </div>
-                                        <div class="thumbnail_blue_text">
-                                            
-                                            
-                                            <div class="lastest_work_thumbnail">
-                                                <img class="lastest_work_pic" 
-                                                src="./imgs/latest_work_thumbnail.png" alt="this is a thumbnail">
-                                            </div>
-                                        </div>
                                 </div>     
-                            </div> 
-                            
+                            </div>
                         </div>       
                 </section>    
         </section> 
