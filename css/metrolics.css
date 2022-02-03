@@ -10,12 +10,13 @@ html {
 
 section.first_half {
     padding: 0;
-    margin: 0;
+    margin: auto;
     /* margin-top:0px;
     margin-bottom:0px; */
     justify-content: center;
     align-content: center;
     justify-items: center;
+    align-items: center;
     font-size: 18px;
 }
 
@@ -29,12 +30,55 @@ a {
     color: black;
 }
 
+.first_half {
+    margin: 0 auto; /* center page */
+    padding: 2rem;  /* page padding */
+    background: rgb(255, 255, 255);
+        min-width: 40rem;
+        max-width: 60rem;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0;
+        grid-template-columns: repeat(6, 1fr);
+
+        /* grid-auto-rows: minmax(10rem, auto); temp container heights */
+        grid-template-areas: 
+            "hd hd hd hd hd hd"
+            "fw fw fw fw fw fw"
+            "it it it it it it"
+            "sv sv sv sv sv sv"
+            "bl bl bl bl bl bl";
+}
+
+.hd {
+    padding-top: 0;
+    grid-area: hd;
+}
+
+.top_fullwidth_graybackground {
+    grid-area: fw;
+}
+
+.home_page_intro {
+    grid-area: it;
+}
+
+.section_services {
+    grid-area: sv;
+}
+
+.section_blog {
+    grid-area: bl;
+}
+
+
 /* HEADER SECTION */
 
 header {
     display: flex;
     flex-direction: row;
-    margin-top: -0.5em; /* remove the white gap between header nav bar and the top */
+    top: 0;
+    bottom: 0;
+    /* margin-top: -0.5em; remove the white gap between header nav bar and the top */
 }
 
 header, .hd_nav {
@@ -67,14 +111,11 @@ ul.hd_nav a.hd_homebutton_one_icon > p {
 }
 
 /*Scale down the Metrolics logo, and move it down */
-.hd div.logo > img.logo_image { 
-    float: right;
-    right: 0;
-    max-width: 90%;
-    height: auto;
-    position: relative;
-    margin-top: 25%;
-    
+/* .hd div.logo > */
+img.logo_image {  
+    display: flex;
+    bottom: 0;
+    margin-top: 1em;
 }
 
 /* Make 5 elements: Home, Page, Blog, Porfolio, Home to row */
@@ -230,8 +271,9 @@ div.arrow_right {
 /* SLIDER CONTENTS */
 
 .slider_contents > div {
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     top: 0;
     left: 0;
 }
@@ -239,6 +281,7 @@ div.arrow_right {
 /* give 3 slider contents white background colour */
 .slider_content_one, .slider_content_two, .slider_content_three {
     background-color: rgba(255, 255, 255, 0.959);
+    max-width: max-content;
     padding: 0.3em;
     padding-left: 0.5em;
     /* width: -moz-fit-content;
@@ -299,12 +342,13 @@ to parent's: slider_content123 height? */
 /* SECTION SERVICE */
 .section_services {
     justify-content: center;
-    margin-top: 20%;
+    padding: 0;
+    margin: 0;
+    /* margin-top: 20%; */
     
 }
 
 .section_services > p.center_headers {
-    background-color: royalblue;
     font-size: 8px;
     padding: 0;
     margin: 0;
@@ -394,41 +438,160 @@ div > p.center_headers {
     margin-bottom: 3em;
  }
 
-/* Home Blog */
+ /* SECTION BLOG */
 
  .section_blog {
-    display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	justify-content: center;
-    margin: 0;
-	
+    width: 100%;
+    height: auto;
+    /* grid-template-rows: 1fr;
+    grid-gap: 1rem; */
+    justify-content: center;
+    grid-column-start: 2;
+    /* grid-column-end: five;
+    grid-row-start: row1-start; */
+    grid-row-end: 3;
  }
 
  .section_blog > .third_header, .entry_description {
+    
     justify-content: center;
     margin: auto;
  }
 
-    
+
+
 .entry_description {
+    width: 100%;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px 20px;
-    float: left;
-    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px 10px;
     justify-content: center;
-    align-content: flex-start;
-    align-items: center;
- 
+    
 }
 
-.latest_work_section {
-    /* width: 90%; */
-    scale: 0.8;
-    margin-left: auto;
-    margin-right: auto;
+.columns {
+    margin: 1em;
+}
+
+
+
+.date_and_time,
+.blue_bar_camera_icon,
+.lastest_work_thumbnail {
+    left: 0;
+    display: grid;
+}
+
+.sampletext {
+    background-color: #19b2de;
+    justify-content: left;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-right: 100%;
+    width: max-content;
+    color: white;
+    /* z-index: 1; */
+    
+   
+    
+}
+
+div.sampletext, div.lastest_work_thumbnail {
+    width: auto;
+    margin: 0;
+} 
+
+/* .thumbnail_blue_text {
+    position: relative;  
+} */
+
+.sampletext {
+    text-align: left;
+    position: absolute;
+
+}
+
+div.sampletext:nth-child(1),
+div.sampletext:nth-child(2) {
+   padding-left: 1.5em;  
+}
+
+
+.date_and_time > div {
+    display: flex;
+    background-color: #d8605f;
+    position: absolute;
+    font-size: 12px;
+    padding: 200em;
+    height: auto;
+    width: 100px;
+    height: 80px;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.thumbnail_group {
+    justify-content: flex-start;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.column img {
+    position: relative;
+}
+
+.date_and_time > p {
+    text-align: center;
+    color: white;
+    top: 0;
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+
+
+.blue_bar_camera_icon {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 1em;
+    display: flex;
+    float: right;
+    left: 85%;
+    /* z-index: 1; */
+    justify-content: right;
+}
+    
+/* .entry_description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: center;
 }
+
+.column_one, 
+.column_two,
+.column_three {
+    margin: 1em;
+}
+
 
 .latest_work_section {
     display: grid;
@@ -447,8 +610,8 @@ div > p.center_headers {
     font-size: 12px;
     padding: 2em;
     height: 20%;
-    /* width: 100px;
-    height: 80px; */
+    width: 100px;
+    height: 80px;
     padding: 0;
     margin: 0;
 }
@@ -485,6 +648,10 @@ div > p.center_headers {
     bottom: 0;
 }
 
+.bluebar {
+    width: 100%;
+}
+
 .sampletext {
     position: absolute;
     text-align: left;
@@ -497,11 +664,14 @@ div > p.center_headers {
 .thumbnails {
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     top: 0;
     left: 0;
     margin: 0;
 }
+
+
 
 .thumbnails .bluebar {
     overflow: hidden;
@@ -511,13 +681,13 @@ div > p.center_headers {
 }
 
 
-#blue_bar_icon {
+#blue_bar_camera_icon {
     position: absolute;
     padding: 0;
     margin: 0;
     bottom: 1em;
     right: 1em;
-}
+} */
 
 /* Kaycee's css end here*/
 
